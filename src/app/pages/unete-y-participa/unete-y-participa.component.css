@@ -1,0 +1,93 @@
+
+/*Unete y participa (pagina)*/
+.div-forms {
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-unete-1 {
+    display: none;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    background-color: #149FDA;
+    border-radius: 30PX;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-unete-2 {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    background-color: #149FDA;
+    border-radius: 30PX;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.div-form-1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../../public/assets/img/img1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: #3A6B80 solid 5px;
+    width: 50%;
+    align-items: center;
+}
+
+
+.div-form-2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../../../../public/assets/img/img1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.form-sesion {
+    background-color: #DBAF1F;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 80px;
+}
+
+
+.acciones-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.div-captcha img {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.btn-aceptar a {
+    background-color: #E9122D;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 45px;
+}

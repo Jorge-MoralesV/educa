@@ -1,0 +1,39 @@
+/*Footer*/
+.navbar-footer {
+    background-color: #3A6B80;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: right;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9122D;
+    font-size: 20px;
+    margin-left: 15px;
+    border-radius: 20px 20px 20px 20px;
+    width: 190px;
+}
+
+.img-footer {
+    width: 100px;
+}
+
+.navbar-footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.navbar-footer a:hover {
+    color: rgb(197, 197, 197);
+}

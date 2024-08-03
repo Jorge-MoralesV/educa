@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+/*Banner*/
+.banner-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-bottom: #E9122D solid 20px;
+}
+
+.banner-content img {
+    opacity: 0.7;
+    height: 350px;
+    z-index: -1;
+}
+
+.texto-banner {
+    display: flex;
+    background-color: #149fda85;
+    font-size: 50px;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    position: absolute;
+    text-shadow: 2px 2px #818181;
+    padding: 10px 50px 10px 50px;
+}

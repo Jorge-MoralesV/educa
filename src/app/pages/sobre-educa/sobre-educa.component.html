@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="banner-content">
+    <img src="assets/sobre-educa/1.png" class="d-block w-100" alt="...">
+    <h2 class="texto-banner">CONTENIDO</h2>
+</div>
+<div>
+    <h2 class="proposito-text">Propósito del proyecto</h2>
+</div>
+
+<div class="container">
+    <div class="sec-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita dignissimos perferendis voluptates adipisci
+            sequi esse laborum eos debitis voluptatem! Consequatur perspiciatis magnam hic blanditiis accusamus adipisci
+            earum nesciunt voluptatem minus?</p>
+        <img src="assets/sobre-educa/2.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae magni aliquid vero sed. Esse officia
+            impedit optio illo aliquid, delectus incidunt magni voluptatibus praesentium, laudantium est nihil
+            voluptates
+            perferendis facilis.</p>
+    </div>
+
+    <div class="sec-2">
+        <div class="card" *ngFor="let card of cards">
+            <h3>{{card.titulo}}</h3>
+            <p>{{card.descripcion}}</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
