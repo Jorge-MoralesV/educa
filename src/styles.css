@@ -25,3 +25,13 @@
     text-shadow: 2px 2px #818181;
     padding: 10px 50px 10px 50px;
 }
+
+@media screen and (max-width:1300px) {
+    .banner-content {
+        margin-top: 85px;
+    }
+
+    .texto-banner {
+        font-size: 30px;
+    }
+}
