@@ -223,14 +223,14 @@ a {
     }
 
     .tarjeta-calendario {
-        width: 350px;
+        width: 100% !important;
         margin-bottom: 50px;
     }
-
+    
     .tarjeta-calendario .compara-link {
         width: 300px;
         height: auto;
-        padding: 0;
+        padding: 1px 1px;
         font-size: smaller;
     }
 
@@ -241,11 +241,13 @@ a {
     }
 
     .tarjeta-calendario .descripcion {
-        font-size: 15px;
-        width: 80%;
+        width: 100%;
+        display: contents;
+        padding: 10px !important;
     }
 
     .info-persona {
+        margin-top: 20px;
         width: 100%;
     }
 
