@@ -1,5 +1,8 @@
 # Educa
 
+Link de Netlify:
+https://educa-demo-jmv.netlify.app/
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
 
 ## Development server
