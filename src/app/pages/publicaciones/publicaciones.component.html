@@ -1,6 +1,28 @@
 <app-navbar></app-navbar>
 <div class="banner-content">
-    <img src="assets/publicaciones/1.png" class="d-block w-100" alt="...">
-    <h2 class="texto-banner">RECURSOS</h2>
+  <img src="assets/publicaciones/banner.webp" class="d-block w-100" alt="...">
+  <h2 class="texto-banner">RECURSOS</h2>
+</div>
+<section class="container">
+  <div *ngFor="let recurso of recursos; let i = index">
+    <div class="tarjeta" [ngStyle]="{'background-color': colores[i%colores.length]}">
+      <h4>Nombre de autor:</h4>
+      <p>{{recurso.nombre}}</p>
+      <h4>Año:</h4>
+      <p>{{recurso.year}}</p>
+      <h4>Título del trabajo:</h4>
+      <p>{{recurso.titulo}}</p>
+      <h4>DOI:</h4>
+      <a routerLink="/">{{recurso.doi}}</a>
+      <div class="file-icon" [ngStyle]="{'background-color': file[i%colores.length]}">
+        <i class="fa fa-file" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="flecha-img">
+  <a routerLink="/">
+    <img src="assets/publicaciones/flecha.webp" alt="flecha" width="70">
+  </a>
 </div>
 <app-footer></app-footer>
