@@ -1,0 +1,61 @@
+<app-navbar />
+
+<main>
+  <div class="banner-content">
+    <img src="assets/conocenos/banner.webp" class="d-block w-100" alt="...">
+    <h2 class="texto-banner">NUESTRO EQUIPO</h2>
+  </div>
+  <div class="contenedor-titulo">
+    <div class="imagen">
+      <img src="assets/conocenos/imagen.webp" alt="" srcset="">
+    </div>
+    <div>
+      <h3 class="titulos">Investigadores</h3>
+    </div>
+  </div>
+
+  <section class="tarjeta-investigador">
+
+    <div class="col-5 investigadores" *ngFor="let investigador of investigadores">
+      <img class="investigador" src={{investigador.imagen}} alt="">
+      <div class="informacion">
+        <h2>{{investigador.nombre}}</h2>
+        <h3>Consejo Nacional de Investigadores</h3>
+        <p>{{investigador.ocupacion}}</p>
+        <div class="contact-icons">
+          <a routerLink="/">
+            <img src="assets/svg/mail.svg" alt="email">
+          </a>
+          <a routerLink="/">
+            <img src="assets/svg/web.svg" alt="web">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="contenedor-titulo">
+    <div class="imagen">
+      <img src="assets/conocenos/imagen.webp" alt="" srcset="">
+    </div>
+    <div>
+      <h3 class="titulos">Organizadores del proyecto</h3>
+    </div>
+  </div>
+
+  <section>
+    <div class="organizadores-logos">
+      <img src="assets/conocenos/scielo.webp" alt="scielo" width="200" height="200">
+      <img src="assets/conocenos/lyrasis.webp" alt="lyrasis" width="350">
+      <img src="assets/conocenos/datacite.webp" alt="datacite" width="350">
+      <img src="assets/conocenos/orcid.webp" alt="orcid" width="350">
+    </div>
+  </section>
+
+  <div class="contenedor-titulo">
+    <h4 class="titulo">Conoce al equipo completo</h4>
+  </div>
+</main>
+
+<app-footer></app-footer>

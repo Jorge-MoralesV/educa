@@ -6,6 +6,7 @@ import { UneteYParticipaComponent } from './pages/unete-y-participa/unete-y-part
 import { TemasComponent } from './pages/temas/temas.component';
 import { PublicacionesComponent } from './pages/publicaciones/publicaciones.component';
 import { SobreEducaComponent } from './pages/sobre-educa/sobre-educa.component';
+import { ConocenosComponent } from './pages/conocenos/conocenos.component';
 
 const routes: Routes = [
   {
@@ -19,8 +20,12 @@ const routes: Routes = [
   }, {
     path: 'publicaciones', component: PublicacionesComponent
   }, {
+    path: 'conocenos', component: ConocenosComponent
+  }, {
     path: 'sobre-educa', component: SobreEducaComponent
-  },
+  }, {
+    path: '**', component: HomeComponent
+  }
 ];
 
 @NgModule({

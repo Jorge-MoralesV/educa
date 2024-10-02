@@ -1,0 +1,99 @@
+/* Etiquetas de titulos */
+.contenedor-titulo {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.contenedor-titulo .imagen {
+  background-color: #3a6b80;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #dbaf1f;
+  z-index: 1;
+}
+
+.contenedor-titulo .imagen img {
+  width: 100%;
+}
+
+.contenedor-titulo .titulos {
+  background-color: #3a6b80;
+  border: 5px solid #dbaf1f;
+  padding: 25px;
+  border-radius: 50px;
+  color: rgb(248, 255, 227);
+  font-weight: bold;
+  width: 500px;
+  text-align: center;
+  transform: translateX(-40px);
+}
+
+.contenedor-titulo .titulo {
+  background-color: #3a6b80;
+  padding: 25px;
+  border-radius: 50px;
+  color: rgb(248, 255, 227);
+  width: 450px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+/* Tarjetas de investigadores */
+.tarjeta-investigador {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.investigadores {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.investigador {
+  width: 300px;
+  z-index: 2;
+}
+
+.informacion {
+  background-color: gainsboro;
+  border: #3a6b80 solid 10px;
+  display: flex;
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px 20px 20px 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  transform: translateX(-45px);
+}
+
+section .investigadores h3 {
+  color: #e60202;
+  font-weight: bold;
+  width: 100%;
+}
+
+section .investigadores p {
+  color: #3a6b80;
+  width: 100%;
+}
+
+.contact-icons img {
+  width: 70px;
+  margin: 0px 5px 5px;
+  transform: translateY(-20px);
+}
+
+/* organizadores logos */
+.organizadores-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
