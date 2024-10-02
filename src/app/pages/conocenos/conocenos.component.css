@@ -49,12 +49,13 @@
 }
 
 .investigadores {
-  display: flex;
+  width: 800px;
+  display: inline-flex;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.investigador {
+.investigador-img {
   width: 300px;
   z-index: 2;
 }
@@ -63,7 +64,8 @@
   background-color: gainsboro;
   border: #3a6b80 solid 10px;
   display: flex;
-  width: fit-content;
+  flex-wrap: wrap;
+  width: max-content;
   text-align: center;
   align-items: center;
   border-radius: 5px;
@@ -96,4 +98,78 @@ section .investigadores p {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+}
+
+
+@media screen and (max-width: 950px) {
+
+  .investigadores {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .investigador-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .informacion {
+    width: 300px;
+    height: 200px;
+  }
+
+  section .investigadores h2,
+  h3,
+  p {
+    font-size: small;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .contenedor-titulo .titulos {
+    width: 250px;
+  }
+
+  .contenedor-titulo .imagen {
+    width: 80px;
+  }
+
+  .contenedor-titulo .titulo {
+    width: 200px;
+    font-size: 16px;
+  }
+
+  .investigador-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .informacion {
+    border: #3a6b80 solid 5px;
+    height: 150px;
+    padding: 10px 0px 0px 50px;
+    transform: translateX(-45px);
+  }
+
+  .contact-icons img {
+    width: 40px;
+  }
+
+  .organizadores-logos img {
+    width: 100px;
+    justify-content: center;
+  }
+
+  .scielo-img {
+    height: 100px;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .investigadores {
+    padding-left: 30px;
+  }
+
 }

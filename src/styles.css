@@ -30,12 +30,22 @@
   background-color: #659fb8;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width: 1300px) {
   .banner-content {
     margin-top: 85px;
   }
 
   .texto-banner {
     font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner-content {
+    height: 200px;
+  }
+
+  .banner-content img {
+    height: -webkit-fill-available;
   }
 }
