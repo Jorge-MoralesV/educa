@@ -1,8 +1,107 @@
 <app-navbar></app-navbar>
 
 <div class="banner-content">
-    <img src="assets/temas/1.png" class="d-block w-100" alt="banner">
-    <h2 class="texto-banner">CONTENIDO</h2>
+  <img src="assets/temas/banner.webp" class="d-block w-100" alt="banner">
+  <h2 class="texto-banner">CONTENIDO</h2>
 </div>
+
+<section class="container">
+  <div class="tema1">
+    <div class="nombre-tema">
+      <img src="assets/temas/tema1.webp" alt="tema-img" width="100">
+      <div class="encabezado">
+        <h3>Tema 1: Preprints</h3>
+        <button class="dropdown-btn" (click)="toggleMenu1()">
+          <img src="assets/temas/flecha.webp" [class.rotated]="isMenuOpen1" class="flecha" alt="flecha" width="50">
+        </button>
+      </div>
+    </div>
+    <div class="submenu" [class.active]="isMenuOpen1">
+      <div class="sub-menu">
+        <p>1.1 ¿Qué son los preprint?</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <div class="sub-menu">
+        <p>1.2 ¿Cuál es su esquema de publicación?</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <div class="sub-menu">
+        <p>1.3 ¿Qué es la revisón abierta?</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <a routerLink="/">Temario completo...</a>
+    </div>
+  </div>
+  <div class="tema2">
+    <div class="nombre-tema">
+      <img src="assets/temas/tema2.webp" alt="tema-img" width="100">
+      <div class="encabezado">
+        <h3>Tema 2: OMP</h3>
+        <button class="dropdown-btn" (click)="toggleMenu2()">
+          <img src="assets/temas/flecha.webp" [class.rotated]="isMenuOpen2" class="flecha" alt="flecha" width="50">
+        </button>
+      </div>
+    </div>
+    <div class="submenu" [class.active]="isMenuOpen2">
+      <div class="sub-menu">
+        <p>2.1 El uso del software libre para libros en acceso...</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <div class="sub-menu">
+        <p>2.2 dPyx: Modelo de evaluación para libros</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <div class="sub-menu">
+        <p>2.3 Gestión editorial de libros</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <a routerLink="/">Temario completo...</a>
+    </div>
+  </div>
+  <div class="tema3">
+    <div class="nombre-tema">
+      <img src="assets/temas/tema3.webp" alt="tema-img" width="100">
+      <div class="encabezado">
+        <h3>Tema 3: Datos Abiertos</h3>
+        <button class="dropdown-btn" (click)="toggleMenu3()">
+          <img src="assets/temas/flecha.webp" [class.rotated]="isMenuOpen3" class="flecha" alt="flecha" width="50">
+        </button>
+      </div>
+    </div>
+    <div class="submenu" [class.active]="isMenuOpen3">
+      <div class="sub-menu">
+        <p>3.1 Datos FAIR</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <div class="sub-menu">
+        <p>3.2 Identificadores persistentes en Datos Abiertos</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <a routerLink="/">Temario completo...</a>
+    </div>
+  </div>
+  <div class="tema4">
+    <div class="nombre-tema">
+      <img src="assets/temas/tema4.webp" alt="tema-img" width="100">
+      <div class="encabezado">
+        <h3>Tema 4: Revistas Científicas</h3>
+        <button class="dropdown-btn" (click)="toggleMenu4()">
+          <img src="assets/temas/flecha.webp" [class.rotated]="isMenuOpen4" class="flecha" alt="flecha" width="50">
+        </button>
+      </div>
+    </div>
+    <div class="submenu" [class.active]="isMenuOpen4">
+      <div class="sub-menu">
+        <p>4.1 Ciencia Ciudadana: Elementos para posicionar...</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <div class="sub-menu">
+        <p>4.2 Revistas depredadoras</p>
+        <img src="assets/temas/flecha.webp" alt="flecha" width="25">
+      </div>
+      <a routerLink="/">Temario completo...</a>
+    </div>
+  </div>
+</section>
 
 <app-footer></app-footer>

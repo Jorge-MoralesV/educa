@@ -1,0 +1,149 @@
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.nombre-tema {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.nombre-tema img {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.nombre-tema .encabezado {
+  color: #fff;
+  padding: 10px 10px 10px 30px;
+  display: inline-flex;
+  width: 100%;
+  height: min-content;
+  justify-content: space-between;
+  align-items: center;
+  transform: translateX(-20px);
+  z-index: 1;
+}
+
+.encabezado h3 {
+  font-weight: bold;
+}
+
+.encabezado button {
+  border: none;
+  background-color: transparent;
+}
+
+.encabezado .flecha {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  transition: transform 0.3s;
+  border-radius: 0;
+}
+
+.flecha.rotated {
+  transform: rotate(90deg);
+}
+
+.submenu {
+  max-height: 0;
+  width: 80%;
+  margin: auto;
+  transition: max-height 0.3s ease-in-out, transform 0.3s ease-in-out;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.submenu.active {
+  max-height: 250px;
+  transform: translateY(0);
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #3A6B80;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.sub-menu {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px rgb(102, 199, 167) solid;
+  padding: 10px;
+}
+
+.sub-menu p {
+  color: #3A6B80;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tema1 .submenu img {
+  background-color: #3A6B80;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.tema2 .submenu img {
+  background-color: #E9122D;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.tema3 .submenu img {
+  background-color: #DBAF1F;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.tema4 .submenu img {
+  background-color: #149fda;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.tema1 .nombre-tema img,
+.tema1 .nombre-tema .encabezado {
+  background-color: #3A6B80;
+}
+
+.tema2 .nombre-tema img,
+.tema2 .nombre-tema .encabezado {
+  background-color: #E9122D;
+
+}
+
+.tema3 .nombre-tema img,
+.tema3 .nombre-tema .encabezado {
+  background-color: #DBAF1F;
+
+}
+
+.tema4 .nombre-tema img,
+.tema4 .nombre-tema .encabezado {
+  background-color: #149fda;
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .encabezado h3 {
+    font-size: large;
+  }
+
+  .encabezado .flecha {
+    width: 40px;
+  }
+
+  .nombre-tema img {
+    width: 80px;
+  }
+}
