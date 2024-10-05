@@ -1,0 +1,154 @@
+.navbar {
+  background-color: #DBAF1F;
+}
+
+.navbar a {
+  color: #fff;
+  height: 50px;
+}
+
+.navbar .barra-busqueda,
+.search-icon {
+  border: none;
+  outline: none;
+  height: 50px;
+  background-color: rgb(219, 220, 220);
+}
+
+.barra-busqueda {
+  width: 600px;
+}
+
+.search-icon {
+  width: 50px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Seccion comentarios */
+.container-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #3A6B80;
+}
+
+.container-titulo h1 {
+  font-weight: bold;
+}
+
+.add-comentario {
+  background-color: #DBAF1F;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.add-comentario p {
+  margin: 0;
+}
+
+.comentarios {
+  background-image: url('/assets/unete-y-participa/fondo2.webp');
+  width: 100%;
+  height: max-content;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Usuario comentario */
+.img-usuario {
+  width: 200px;
+}
+
+.img-usuario img {
+  width: 100%;
+}
+
+.info-usuario {
+  width: 100%;
+  align-content: center;
+}
+
+.info-usuario h2 {
+  color: #E9122D;
+  font-weight: bolder;
+}
+
+.info-usuario p {
+  color: #3A6B80;
+  font-weight: bold;
+}
+
+.comentario-usuario {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.comentario-usuario p {
+  font-weight: bolder;
+}
+
+.etiqueta {
+  text-align: center;
+  color: #3A6B80;
+  font-weight: bold;
+  border-bottom: 2px #3A6B80 solid;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+
+.flecha-comentario {
+  width: 150px;
+}
+
+.flecha-comentario img {
+  display: block;
+  margin: auto;
+}
+
+.comentario-respuesta {
+  width: 100%;
+}
+
+.flecha-img {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 770px) {
+  .comentario-usuario {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .container-titulo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .container-titulo img {
+    width: 100px;
+  }
+
+  .container-titulo h1 {
+    font-weight: bold;
+    font-size: larger;
+  }
+
+  .flecha-comentario img {
+    width: 20px;
+    height: 35px;
+  }
+}
